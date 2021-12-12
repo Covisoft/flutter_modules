@@ -13,8 +13,8 @@ class BottomNavStyle3 extends StatelessWidget {
     return this.navBarEssentials!.navBarHeight == 0
         ? SizedBox.shrink()
         : AnimatedContainer(
-            width: 100.0,
-            height: height! / 1.0,
+            width: 150.0,
+            height: height,
             duration:
                 this.navBarEssentials!.itemAnimationProperties?.duration ??
                     Duration(milliseconds: 1000),
@@ -28,7 +28,7 @@ class BottomNavStyle3 extends StatelessWidget {
               curve: this.navBarEssentials!.itemAnimationProperties?.curve ??
                   Curves.ease,
               alignment: Alignment.center,
-              height: height / 1.0,
+              height: height,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
