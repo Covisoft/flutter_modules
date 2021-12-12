@@ -32,6 +32,8 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
           color: Colors.amber,
         ),
         title: "Trang chủ",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
       PersistentBottomNavBarItem(
@@ -41,6 +43,8 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
           color: Colors.amber,
         ),
         title: "Deal",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
       PersistentBottomNavBarItem(
@@ -50,6 +54,8 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
           color: Colors.amber,
         ),
         title: "Tin tức",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
       PersistentBottomNavBarItem(
@@ -59,6 +65,8 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
           color: Colors.amber,
         ),
         title: "Chat",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
       PersistentBottomNavBarItem(
@@ -68,6 +76,8 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
           color: Colors.amber,
         ),
         title: "Setting",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
     ];
@@ -85,6 +95,7 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
       },
       backgroundColor: Colors.blue,
       items: _navBarsItems(),
+      navBarHeight: 70,
       decoration: NavBarDecoration(
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0))),
@@ -97,7 +108,7 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
         curve: Curves.ease,
         duration: Duration(milliseconds: 200),
       ),
-      navBarStyle: NavBarStyle.style6,
+      navBarStyle: NavBarStyle.style3,
     );
   }
 }

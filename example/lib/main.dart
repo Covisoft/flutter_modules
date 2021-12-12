@@ -27,7 +27,7 @@ class _AppState extends State<App> {
       builder: () {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home:HomePage(),
+          home:PersistentTabBarView(),
         );
       }
     );
