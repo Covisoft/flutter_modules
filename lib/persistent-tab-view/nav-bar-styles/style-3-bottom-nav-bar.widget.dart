@@ -56,23 +56,23 @@ class BottomNavStyle3 extends StatelessWidget {
                           child: Material(
                             type: MaterialType.transparency,
                             child: DefaultTextStyle.merge(
-                              style: TextStyle(
-                                  color: item.textStyle != null
-                                      ? item.textStyle!.apply(
-                                              color: isSelected
-                                                  ? (item.activeColorSecondary ==
-                                                          null
-                                                      ? item.activeColorPrimary
-                                                      : item.activeColorSecondary)
-                                                  : item.inactiveColorPrimary)
-                                          as Color?
-                                      : isSelected
-                                          ? (item.activeColorSecondary == null
-                                              ? item.activeColorPrimary
-                                              : item.activeColorSecondary)
-                                          : item.inactiveColorPrimary,
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 12.0),
+                              style: item.textStyle != null
+                                        ? (item.textStyle!.apply(
+                                            color: isSelected
+                                                ? (item.activeColorSecondary ==
+                                                        null
+                                                    ? item.activeColorPrimary
+                                                    : item.activeColorSecondary)
+                                                : item.inactiveColorPrimary))
+                                        : TextStyle(
+                                            color: isSelected
+                                                ? (item.activeColorSecondary ==
+                                                        null
+                                                    ? item.activeColorPrimary
+                                                    : item.activeColorSecondary)
+                                                : item.inactiveColorPrimary,
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 12.0),
                               child: FittedBox(child: Text(item.title!)),
                             ),
                           ),
