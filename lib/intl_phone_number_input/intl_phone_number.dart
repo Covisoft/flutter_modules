@@ -115,8 +115,7 @@ class _PhoneNumberInputState extends State<PhoneNumberInput> {
       initialValue: widget.initialValue,
       hintText: widget.hintText,
       errorMessage: widget.errorMessage,
-      height: widget.height,
-      widthSelector: widget.widthSelector,
+     
       selectorButtonOnErrorPadding: widget.selectorButtonOnErrorPadding,
       spaceBetweenSelectorAndTextField: widget.spaceBetweenSelectorAndTextField,
       maxLength: widget.maxLength,
@@ -127,7 +126,7 @@ class _PhoneNumberInputState extends State<PhoneNumberInput> {
       autoValidateMode: widget.autoValidateMode,
       ignoreBlank: widget.ignoreBlank,
       countrySelectorScrollControlled: widget.countrySelectorScrollControlled,
-      selectorDecoration: widget.selectorDecoration,
+      
       locale: widget.locale,
       textStyle: widget.textStyle,
       selectorTextStyle: widget.selectorTextStyle,
