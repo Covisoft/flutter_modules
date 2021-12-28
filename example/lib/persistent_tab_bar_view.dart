@@ -20,7 +20,7 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
   }
 
   List<Widget> _buildScreens() {
-    return [HomePage(), Container(), Container(), Container(), Container()];
+    return [HomePage(), Container(), Container(),Container(), Container(), Container()];
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
@@ -80,6 +80,17 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
         inactiveColorPrimary: Colors.grey,
         contentPadding: 10,
       ),
+      PersistentBottomNavBarItem(
+        icon: Container(
+          height: 30,
+          width: 30,
+          color: Colors.amber,
+        ),
+        title: "Setting",
+        activeColorPrimary: Colors.deepOrange,
+        inactiveColorPrimary: Colors.grey,
+        contentPadding: 10,
+      ),
     ];
   }
 
@@ -89,7 +100,7 @@ class _PersistentTabBarViewState extends State<PersistentTabBarView> {
       context,
       controller: _controller,
       screens: _buildScreens(),
-      onWillPop: (context)async{
+      onWillPop: (context) async {
         print("pop $context");
         return false;
       },

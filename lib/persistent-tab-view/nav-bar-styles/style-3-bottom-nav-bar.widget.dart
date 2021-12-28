@@ -116,9 +116,10 @@ class BottomNavStyle3 extends StatelessWidget {
                 color: Colors.transparent,
                 width: this.navBarEssentials!.selectedIndex == 0
                     ? MediaQuery.of(context).size.width * 0.0
-                    : itemWidth * this.navBarEssentials!.selectedIndex!,
+                    : itemWidth * this.navBarEssentials!.selectedIndex!*1.12,
                 height: 4.0,
               ),
+              
               Flexible(
                 child: AnimatedContainer(
                   duration: this
@@ -138,8 +139,10 @@ class BottomNavStyle3 extends StatelessWidget {
                   ),
                 ),
               )
+            
             ],
           ),
+        
           Expanded(
             child: Padding(
               padding: const EdgeInsets.only(top: 5.0),
