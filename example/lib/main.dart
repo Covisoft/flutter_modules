@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modules/flutter_modules.dart';
 
 import 'persistent_tab_bar_view.dart';
+
+late List<CameraDescription> cameras;
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  cameras = await availableCameras();
   runApp(App());
 }
 

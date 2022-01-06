@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:example/main.dart';
 import 'package:example/screen1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modules/flutter_modules.dart';
@@ -46,8 +47,17 @@ class _HomePageState extends State<HomePage> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => DemoWalletLogin()));
+              pushNewScreen(context, screen: TakePictureScreen(
+                            camera: cameras.first,
+                            onBack: (value) {},
+                          ),withNavBar: false);
+              // Navigator.push(
+              //     context,
+              //     MaterialPageRoute(
+              //         builder: (context) => TakePictureScreen(
+              //               camera: cameras.first,
+              //               onBack: () {},
+              //             )));
             },
             child: Container(
               height: 50,
@@ -59,10 +69,8 @@ class _HomePageState extends State<HomePage> {
             height: 100,
           ),
           TextFormField(
-            controller:controller,
-            inputFormatters: [
-              
-            ],
+            controller: controller,
+            inputFormatters: [],
           ),
 
           // Container(
@@ -94,7 +102,7 @@ class _HomePageState extends State<HomePage> {
           //     },
           //   ),
           // ),
-          
+
           SizedBox(
             height: 100,
           ),
@@ -124,7 +132,6 @@ class _HomePageState extends State<HomePage> {
           //         ),
           //       )),
           // )
-        
         ],
       ),
     );

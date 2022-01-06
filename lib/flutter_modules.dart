@@ -1,7 +1,9 @@
 library flutter_modules;
 
+import 'dart:io';
 import 'dart:ui';
 
+import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -14,16 +16,14 @@ import 'package:flutter_modules/constants/text_configs.dart';
 import 'package:flutter_modules/modules/wallet/login_bloc/wallet_login_bloc.dart';
 import 'package:flutter_modules/modules/wallet/models/customize_login_screen.dart';
 import 'package:intl/intl.dart';
-
+import 'package:photo_view/photo_view.dart';
 import 'package:flutter_modules/pin_code/cursor_painter.dart';
 import 'package:flutter_modules/pin_code/models/platform.dart';
 import 'package:flutter_modules/button/bell/circle.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter/cupertino.dart' show CupertinoApp;
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:photo_view/photo_view_gallery.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:photo_manager/photo_manager.dart';
 export 'package:dio/dio.dart';
@@ -34,8 +34,8 @@ export 'package:path_provider/path_provider.dart';
 export 'likk_picker/src/camera/camera_view.dart';
 export 'likk_picker/src/gallery/gallery_view.dart';
 export 'modules/wallet/login_bloc/wallet_login_bloc.dart';
-
-
+export 'package:camera/camera.dart';
+export 'package:flutter_bloc/flutter_bloc.dart';
 part 'persistent-tab-view/persistent-tab-view.widget.dart';
 part 'button/build_button.dart';
 part 'button/progress_button/progress_button_animation.dart';
@@ -49,10 +49,9 @@ part 'button/bell/blinking_point.dart';
 
 part 'camera/constants/custom_pick_method.dart';
 part 'camera/constants/extensions.dart';
-
+part 'camera/takePictureScreen.dart';
 part 'modules/wallet/login_screen.dart';
 part 'modules/wallet/forgot_password_screen.dart';
-
 
 //Models
 part 'persistent-tab-view/models/persistent-nav-bar-scaffold.widget.dart';
@@ -104,7 +103,6 @@ part 'persistent-tab-view/nav-bar-styles/neumorphic-bottom-nav-bar.widget.dart';
 part 'intl_phone_number_input/intl_phone_number.dart';
 part 'keyboard/keyboard.dart';
 part 'animation/shake_animation.dart';
-
 
 part 'constants/text_input_pormatter.dart';
 // part 'module_login/verify_code/verify_code_screen.dart';
