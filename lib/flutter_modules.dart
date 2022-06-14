@@ -20,7 +20,6 @@ import 'package:photo_view/photo_view.dart';
 import 'package:flutter_modules/pin_code/cursor_painter.dart';
 import 'package:flutter_modules/pin_code/models/platform.dart';
 import 'package:flutter_modules/button/bell/circle.dart';
-import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:photo_view/photo_view_gallery.dart';

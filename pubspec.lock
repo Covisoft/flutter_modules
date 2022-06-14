@@ -233,15 +233,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
-  intl_phone_number_input:
-    dependency: "direct main"
-    description:
-      path: intl_phone_number_input
-      ref: HEAD
-      resolved-ref: "917e813d1c27dc68e2783e635ac32b42424c94b8"
-      url: "https://github.com/Honghm/flutter_packages"
-    source: git
-    version: "0.0.4"
   js:
     dependency: transitive
     description:

@@ -159,7 +159,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.1.11"
+    version: "0.1.12"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -180,7 +180,7 @@ packages:
       name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.3"
+    version: "1.1.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -226,15 +226,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
-  intl_phone_number_input:
-    dependency: transitive
-    description:
-      path: intl_phone_number_input
-      ref: HEAD
-      resolved-ref: "535881b696a789b75761f72ccfa4180633085ea6"
-      url: "https://github.com/Honghm/flutter_packages"
-    source: git
-    version: "0.0.3"
   js:
     dependency: transitive
     description:
@@ -381,7 +372,7 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.4.0"
+    version: "5.0.0"
   photo_manager:
     dependency: transitive
     description:
@@ -526,7 +517,7 @@ packages:
       name: xml
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.3.1"
+    version: "6.1.0"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
-  flutter: ">=2.10.0-0"
+  dart: ">=2.17.0 <3.0.0"
+  flutter: ">=2.11.0-0.1.pre"
