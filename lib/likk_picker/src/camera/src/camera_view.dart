@@ -88,7 +88,7 @@ class _CameraViewState extends State<CameraView>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
     _controllerNotifier = ControllerNotifier();
     _camController = CamController(
       controllerNotifier: _controllerNotifier,
@@ -139,7 +139,7 @@ class _CameraViewState extends State<CameraView>
   @override
   void dispose() {
     _showSB();
-    WidgetsBinding.instance?.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     _controllerNotifier.dispose();
     _camController.dispose();
     _playgroundController

@@ -541,7 +541,7 @@ class _GalleryViewFieldState extends State<GalleryViewField> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback(_init);
+    WidgetsBinding.instance.addPostFrameCallback(_init);
   }
 
   void _init(Duration timeStamp) {
