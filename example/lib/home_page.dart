@@ -15,18 +15,17 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController controller = TextEditingController();
   String text = '';
-  StreamController<ErrorAnimationType>? errorController;
+
   bool hasError = false;
   @override
   void initState() {
-    errorController = StreamController<ErrorAnimationType>();
+
     super.initState();
   }
 
   @override
   void dispose() {
     controller.dispose();
-    errorController!.close();
     super.dispose();
   }
 
@@ -47,10 +46,7 @@ class _HomePageState extends State<HomePage> {
           ),
           GestureDetector(
             onTap: () {
-              pushNewScreen(context, screen: TakePictureScreen(
-                            camera: cameras.first,
-                            onBack: (value) {},
-                          ),withNavBar: false);
+          
               // Navigator.push(
               //     context,
               //     MaterialPageRoute(

@@ -1,7 +1,0 @@
-enum GroupedButtonsOrientation {
-  HORIZONTAL_ROW,
-  HORIZONTAL_COLUMN,
-  VERTICAL,
-  VERTICAL_ROW,
-  VERTICAL_COLUMN,
-}
