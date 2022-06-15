@@ -1,10 +1,10 @@
 name: flutter_modules
 description: Template of some commonly used widgets.
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/Covisoft/flutter_modules
 
 environment:
-  sdk: ">=2.13.0 <3.0.0"
+  sdk: ">=2.15.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -16,7 +16,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^2.4.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -24,8 +23,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   # To add assets to your package, add an assets section, like this:
-  assets:
-    - assets/flags/
+
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
@@ -39,13 +37,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: CustomIcons
-      fonts:
-        - asset: assets/fonts/CustomIcons.ttf
-    - family: ShapeIcons
-      fonts:
-        - asset: assets/fonts/ShapeIcons.ttf
+ 
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
