@@ -1,5 +1,7 @@
 part of flutter_modules;
 
+
+
 class TakePictureScreen extends StatefulWidget {
   final CameraDescription camera;
   final Function(List<String>) onBack;
@@ -213,7 +215,7 @@ class _PhotoViewState extends State<PhotoView> {
               scrollDirection: Axis.horizontal,
             ),
             Container(
-              padding: EdgeInsets.all(20.w),
+              padding: EdgeInsets.all(20),
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
@@ -227,7 +229,7 @@ class _PhotoViewState extends State<PhotoView> {
                     if (imagePaths.isEmpty) Navigator.pop(context);
                   },
                   child: Padding(
-                    padding: EdgeInsets.all(8.w),
+                    padding: EdgeInsets.all(8),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
